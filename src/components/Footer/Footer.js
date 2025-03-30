@@ -2,7 +2,7 @@ import React from "react";
 import '../Footer/Footer.css';
 import {
   FaPhone, FaEnvelope, FaMapMarkerAlt,
-  FaFacebook, FaTwitter, FaYoutube, FaLinkedin
+  FaFacebook, FaTwitter, FaYoutube, FaLinkedin, FaInstagram 
 } from "react-icons/fa";
 import QuoteForm from "../Button/Quote";
 
@@ -19,16 +19,13 @@ const Footer = () => {
         <div className="footer-links">
           <ul>
             {[
-              { name: "NEWS", link: "/news" },
-              { name: "BLOGS", link: "/blogs" },
-              { name: "CAREERS", link: "/careers" },
-              { name: "ABOUT US", link: "/about" },
-              { name: "CONTACT US", link: "/contact" },
-              { name: "CASE STUDIES", link: "/case-studies" },
+
+              { name: "ABOUT US", link: "/AboutPage" },
+              { name: "CONTACT US", link: "/contactus" },
               { name: "SOLAR CALCULATOR", link: "/solar-calculator" },
-              { name: "SOLAR PANEL FOR HOME", link: "/solar-home" },
-              { name: "SOLAR PANEL FOR BUSINESS", link: "/solar-business" },
-              { name: "SOLAR PANEL FOR HOUSING SOCIETY", link: "/solar-society" }
+              { name: "SOLAR PANEL FOR HOME", link: "/Residencal" },
+              { name: "SOLAR PANEL FOR BUSINESS", link: "/Commercial" },
+              { name: "SOLAR PANEL FOR HOUSING SOCIETY", link: "/Society" }
             ].map((item, index) => (
               <li key={index}>
                 <a href={item.link}>{item.name}</a>
@@ -40,15 +37,16 @@ const Footer = () => {
 
         <div className="footer-contact">
           <QuoteForm/>
-          <p><FaPhone /> <a href="tel:9981683337">9981683337</a></p>
-          <p><FaEnvelope /> <a href="mailto:info@mirajsolar.com">info@mirajsolar.com</a></p>
-          <p><FaMapMarkerAlt /> <a href="https://g.co/kgs/DQSCyQC"> 300 A, Ground Floor, Anoop Nagar, Indore, India - 452018 </a> </p>
+          <p><FaPhone /> <a href="tel:7999269074">7999269074</a></p>
+          <p><FaEnvelope /> <a href="mailto:sales@mirajsolar.com">sales@mirajsolar.com</a></p>
+          <p><FaMapMarkerAlt /> <a href="https://g.co/kgs/DQSCyQC"> 300A, Ground Floor, Anoop Nagar Near Shaikh Super Store , Indore, India - 452018 </a> </p>
 
           <div className="social-icons">
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><FaFacebook /></a>
+            <a href="https://www.facebook.com/share/14E8iV3Cw2h/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer"><FaFacebook /></a>
             <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
             <a href="https://youtube.com" target="_blank" rel="noopener noreferrer"><FaYoutube /></a>
             <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+            <a href="https://www.instagram.com/mirajsolar__rooftopsolar?igsh=MTg3cjBrcHZjYndkaw%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
           </div>
         </div>
       </div>

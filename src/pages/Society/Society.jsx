@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import "../Society/Society.css"
 import QuoteForm from '../../components/Button/Quote'
 import { FaMoneyBillWave, FaHandHoldingUsd, FaClipboardCheck } from "react-icons/fa";
 import experienceIcon from "../../assets/images/best-badge.png";
@@ -144,8 +145,8 @@ function Society() {
     
     return (
         <div>
-            <div className="residencal-overlay">
-                <div className="residencal-content">
+            <div className="society-overlay">
+                <div className="society-content">
                     <h2>
                         Rooftop Solar Panels for Housing Societies
                     </h2>

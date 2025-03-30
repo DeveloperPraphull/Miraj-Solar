@@ -168,11 +168,11 @@ function Commercial() {
 
     return (
         <div>
-            <div className="residencal-overlay">
+            <div className="commercial-overlay">
 
-                <div className="residencal-content">
+                <div className="commercial-content">
                     <h2>
-                        Best Solar System for Home in India
+                    Solar for Business: Reduce Costs, Boost Efficiency
                     </h2>
                     <QuoteForm />
                 </div>

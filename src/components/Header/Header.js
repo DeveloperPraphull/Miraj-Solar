@@ -32,19 +32,19 @@ export default function Header() {
             </ul>
           </li>
           <li><a href="/AboutPage">ABOUT US</a></li>
-          <li className="dropdown">
+          {/* <li className="dropdown">
             <a href="#">MORE ▼</a>
             <ul className="dropdown-menu">
               <li><a href="#">Careers</a></li>
               <li><a href="#">Contact Us</a></li>
             </ul>
-          </li>
+          </li> */}
         </ul>
 
         {/* Contact & Quote Button */}
         <div className="contact">
           <button className="phone">
-            <LuPhone /> 9981683337
+            <LuPhone /> 7999269074
           </button>
           <QuoteForm/>
         </div>
