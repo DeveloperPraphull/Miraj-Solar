@@ -1,0 +1,113 @@
+
+.awards-section {
+  text-align: center;
+  padding: 50px 20px;
+  font-family: fangsong;
+}
+
+.awards-section h2 {
+  font-size: 2rem;
+  color: #000;
+  margin-bottom: 30px;
+}
+
+.awards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.award-card {
+  background: white;
+  border-radius: 15px;
+  padding: 15px;
+  border: 2px solid #a3ea2e;
+  /* Green Border */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+}
+
+.award-card img {
+  max-width: 100%;
+  max-height: 120px;
+  object-fit: contain;
+}
+
+
+
+/* Testimonials.css */
+.testimonials-section {
+  background: #1d3b75;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.testimonials-section h2 {
+  font-size: 2rem;
+  margin-bottom: 5rem;
+}
+
+.testimonials-container {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.testimonial-card {
+  background: white;
+  color: black;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  width: 320px;
+  min-height: 250px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.profile {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin: -40px auto 10px;
+}
+
+.profile img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.play-button {
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #a3ea2e;
+  color: black;
+  font-size: 14px;
+  font-weight: bold;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.location {
+  font-size: 14px;
+  color: #555;
+}
+
+.feedback {
+  font-size: 14px;
+  margin-top: 10px;
+}
