@@ -1,5 +1,6 @@
 import React from "react";
 import '../Footer/Footer.css';
+import { Link } from 'react-router-dom';
 import {
   FaPhone, FaEnvelope, FaMapMarkerAlt,
   FaFacebook, FaTwitter, FaYoutube, FaLinkedin, FaInstagram 
@@ -28,7 +29,7 @@ const Footer = () => {
               { name: "SOLAR PANEL FOR HOUSING SOCIETY", link: "/Society" }
             ].map((item, index) => (
               <li key={index}>
-                <a href={item.link}>{item.name}</a>
+                <Link to={item.link}>{item.name}</Link>
               </li>
             ))}
           </ul>
@@ -37,16 +38,16 @@ const Footer = () => {
 
         <div className="footer-contact">
           <QuoteForm/>
-          <p><FaPhone /> <a href="tel:7999269074">7999269074</a></p>
-          <p><FaEnvelope /> <a href="mailto:sales@mirajsolar.com">sales@mirajsolar.com</a></p>
-          <p><FaMapMarkerAlt /> <a href="https://g.co/kgs/DQSCyQC"> 300A, Ground Floor, Anoop Nagar Near Shaikh Super Store , Indore, India - 452018 </a> </p>
+          <p><FaPhone /> <Link to="tel:8989909074">8989909074</Link></p>
+          <p><FaEnvelope /> <Link to="mailto:sales@mirajsolar.com">sales@mirajsolar.com</Link></p>
+          <p><FaMapMarkerAlt /> <Link to="https://g.co/kgs/DQSCyQC"> 300A, Ground Floor, Anoop Nagar Near Shaikh Super Store , Indore, India - 452018 </Link> </p>
 
           <div className="social-icons">
-            <a href="https://www.facebook.com/share/14E8iV3Cw2h/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer"><FaFacebook /></a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
-            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer"><FaYoutube /></a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
-            <a href="https://www.instagram.com/mirajsolar__rooftopsolar?igsh=MTg3cjBrcHZjYndkaw%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+            <Link to="https://www.facebook.com/share/14E8iV3Cw2h/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer"><FaFacebook /></Link>
+            <Link to="https://twitter.com" target="_blank" rel="noopener noreferrer"><FaTwitter /></Link>
+            <Link to="https://youtube.com" target="_blank" rel="noopener noreferrer"><FaYoutube /></Link>
+            <Link to="https://linkedin.com" target="_blank" rel="noopener noreferrer"><FaLinkedin /></Link>
+            <Link to="https://www.instagram.com/mirajsolar__rooftopsolar?igsh=MTg3cjBrcHZjYndkaw%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer"><FaInstagram /></Link>
           </div>
         </div>
       </div>

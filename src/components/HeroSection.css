@@ -64,10 +64,10 @@
   }
   
   .panel-advo h1 {
-  
-    font-family: serif;
-    font-size: 35px;
-  
+    font-family: sans-serif;
+    font-size: 2vw; 
+    font-weight: bold;
+    line-height: 1.2;
   }
   
   .panel-advo h1 b {
@@ -98,8 +98,19 @@
     color: rgb(17 241 32);
 }
 
+.panel-advo h1 {
+  font-size: 2rem;
+}
+
 .panel-advo p {
   font-size: 21px;
 }
 
+  }
+
+
+  @media (max-width: 480px) {
+    .panel-advo h1 {
+      font-size: 7vw;
+    }
   }

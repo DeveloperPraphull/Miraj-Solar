@@ -3,6 +3,8 @@ import '../Header/Header.css'
 import { LuPhone } from "react-icons/lu";
 import { FaBars, FaTimes } from "react-icons/fa";
 import QuoteForm from '../Button/Quote';
+import { Link } from 'react-router-dom';
+
 
 export default function Header() {
 
@@ -22,32 +24,32 @@ export default function Header() {
       {/* Navigation */}
       <nav className={`nav-in ${menuOpen ? "show" : ""}`}>
         <ul className="nav-links">
-          <li><a href="/">HOME</a></li>
+          <li><Link to="/">HOME</Link></li>
           <li className="dropdown">
-            <a href="#">ROOFTOP SOLAR ▼</a>
+            <Link to="#">ROOFTOP SOLAR ▼</Link>
             <ul className="dropdown-menu">
-              <li><a href="/residencal">Residential</a></li>
-              <li><a href="/commercial">Commercial</a></li>
-              <li><a href="/society">Society</a></li>
+              <li><Link to="/residencal">Residential</Link></li>
+              <li><Link to="/commercial">Commercial</Link></li>
+              <li><Link to="/society">Society</Link></li>
             </ul>
           </li>
-          <li><a href="/AboutPage">ABOUT US</a></li>
+          <li><Link to="/AboutPage">ABOUT US</Link></li>
           {/* <li className="dropdown">
-            <a href="#">MORE ▼</a>
+            <Link to="#">MORE ▼</Link>
             <ul className="dropdown-menu">
-              <li><a href="#">Careers</a></li>
-              <li><a href="#">Contact Us</a></li>
+              <li><Link to="#">Careers</Link></li>
+              <li><Link to="#">Contact Us</Link></li>
             </ul>
           </li> */}
         </ul>
 
         {/* Contact & Quote Button */}
         <div className="contact">
-          <a href="tel:7999269074">
+          <Link to="tel:8989909074">
             <button className="phone">
-              <LuPhone /> 7999269074
+              <LuPhone /> 8989909074
             </button>
-          </a>
+          </Link>
 
           <QuoteForm />
         </div>
