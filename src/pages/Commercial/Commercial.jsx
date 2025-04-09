@@ -25,21 +25,21 @@ function Commercial() {
             name: "Ayaj Mohd. ",
             location: "Jabalpur, Madhya Pradesh",
             feedback:
-                "It’s been 1 year since Freyr Energy installed system on my home. We have not faced any issues and are very happy with their service. Highly recommend Freyr Energy.",
+                "It’s been 1 year since Miraj Solar  installed system on my home. We have not faced any issues and are very happy with their service. Highly recommend Miraj Solar .",
         },
         {
             img: profile2,
             name: "Sandeep Singh",
             location: "Indore, Madhya Pradesh",
             feedback:
-                "We have installed solar in 4 of our facilities with Freyr Energy and our energy costs have reduced substantially. Our consumers are already appreciating our efforts towards sustainability & net-zero.",
+                "We have installed solar in 4 of our facilities with Miraj Solar  and our energy costs have reduced substantially. Our consumers are already appreciating our efforts towards sustainability & net-zero.",
         },
         {
             img: profile3,
             name: "Vinay Vajpei",
             location: "Bhopal, Madhya Pradesh",
             feedback:
-                "Freyr Energy installed 3kW system on my house in Hyderabad. I used to pay ₹ 2,500-3,000 before solar, and last month I paid only ₹ 300! Their after-sales is also very quick & reliable.",
+                "Miraj Solar  installed 3kW system on my house in Hyderabad. I used to pay ₹ 2,500-3,000 before solar, and last month I paid only ₹ 300! Their after-sales is also very quick & reliable.",
         },
     ];
 
@@ -98,20 +98,20 @@ function Commercial() {
                 answer: "In India, the price range of commercial solar panels at 3kW is between ₹1, 75,000 to ₹1, 80,000. This implies that the price per watt ranges between ₹50 and ₹60, based on your specific requirements and the size of the system.",
             },
             {
-                question: "What financing options does Freyr Energy offer for solar panel installations in Industries?",
-                answer: "With Freyr Energy, you will get a solar loan that allows you to own a solar system to save your energy bills and provides financial returns with very less to no upfront price. The loan terms are also flexible which means payments can easily fit into your budget and the money you save on energy covers your EMI. In addition, you can gain some extra savings because of tax incentives such as benefits from GST and rapid depreciation.",
+                question: "What financing options does Miraj Solar  offer for solar panel installations in Industries?",
+                answer: "With Miraj Solar , you will get a solar loan that allows you to own a solar system to save your energy bills and provides financial returns with very less to no upfront price. The loan terms are also flexible which means payments can easily fit into your budget and the money you save on energy covers your EMI. In addition, you can gain some extra savings because of tax incentives such as benefits from GST and rapid depreciation.",
             },
             {
                 question: "What are the benefits of installing a solar panel system in Industries?",
                 answer: "Installing solar panels  reduces the costs of electricity, increases the value of your property, and supports your environment by decreasing carbon emissions. With minimum upkeep and high durability, the benefits of the system lengthen for years, making payment for itself with the created savings.",
             },
             {
-                question: "How does Freyr Energy ensure the quality and reliability of its solar system?",
-                answer: "Freyr Energy makes sure their solar panels for commercial and industries  are of the highest quality by doing detailed tests and quality checks. Plus, our Freyr Energy Solar App  lets you easily monitor your solar system’s performance in real-time, ensuring everything runs smoothly. Freyr Energy is known for its expertise in solar solutions in India, helping customers understand everything about solar panel installations, whether for homes or businesses, to make informed choices.",
+                question: "How does Miraj Solar  ensure the quality and reliability of its solar system?",
+                answer: "Miraj Solar  makes sure their solar panels for commercial and industries  are of the highest quality by doing detailed tests and quality checks. Plus, our Miraj Solar  Solar App  lets you easily monitor your solar system’s performance in real-time, ensuring everything runs smoothly. Miraj Solar  is known for its expertise in solar solutions in India, helping customers understand everything about solar panel installations, whether for homes or businesses, to make informed choices.",
             },
             {
-                question: "What types of solar panel systems does Freyr Energy offer for industries?",
-                answer: "Freyr Energy offers solar panel systems having feature components from the best vendors to make sure it is of premium quality. We offer installation services that are free from trouble along with the best solar financing options . We make all efforts to make sure that solar energy is available for your maximum applications whether it is for residential purposes or commercial.",
+                question: "What types of solar panel systems does Miraj Solar  offer for industries?",
+                answer: "Miraj Solar  offers solar panel systems having feature components from the best vendors to make sure it is of premium quality. We offer installation services that are free from trouble along with the best solar financing options . We make all efforts to make sure that solar energy is available for your maximum applications whether it is for residential purposes or commercial.",
             },
             {
                 question: "What is the best way to clean solar panels?",
@@ -183,7 +183,7 @@ function Commercial() {
                 <div className='panel-advo'>
                     <h1>Top Commercial Solar Power Systems Company in India </h1>
                     <p>
-                        Freyr Energy is one of the renowned rooftop solar companies across India. We install solar panels for houses and businesses. With over 8,500+ delighted
+                        Miraj Solar  is one of the renowned rooftop solar companies across India. We install solar panels for houses and businesses. With over 8,500+ delighted
                         clients across India, we have been offering world-class solar solutions since 2014. We are affiliated with MNRE.
                     </p>
 

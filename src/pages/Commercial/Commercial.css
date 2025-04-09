@@ -6,7 +6,7 @@
   color: white;
   width: 98%;
   height: 35rem;
-  background-image: url(../../assets/images/banner-homes.jpg);
+  background-image: url(../../assets/images/commercial_image.png);
   border-radius: 24px;
   overflow: hidden;
   background-repeat: no-repeat;
@@ -30,7 +30,7 @@
 
 .commercial-content {
    justify-items: center;
-   color: rgb(26, 126, 33);
+
 }
 
 

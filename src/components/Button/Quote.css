@@ -11,7 +11,7 @@
     border: 1px solid #66cc33;
     background: #66cc33;
     color: #333;
-    z-index: 1;
+    z-index: 0;
   }
   
   /* Background Effect for Quote Button (Top to Bottom) */

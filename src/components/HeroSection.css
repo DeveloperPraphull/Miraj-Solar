@@ -80,4 +80,25 @@
     font-size: clamp(14px, 3vw, 18px);
   }
   
-  
+  @media (max-width: 768px) {
+
+
+    .hero-overlay {
+      height: 25rem;
+
+  }
+
+  .hero-content h2 {
+    font-size: clamp(25px, 6vw, 39px);
+  }
+
+  .hero-content {
+    margin-top: 29%;
+    color: rgb(17 241 32);
+}
+
+.panel-advo p {
+  font-size: 21px;
+}
+
+  }

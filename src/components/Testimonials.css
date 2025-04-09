@@ -63,12 +63,26 @@
   }
   
   .location {
-    font-size: 14px;
+    font-size: 17px;
     color: #555;
   }
   
   .feedback {
-    font-size: 14px;
+    font-size: 16px;
     margin-top: 10px;
   }
   
+
+  @media (max-width: 768px){
+
+    .location {
+      font-size: 1.3rem;
+
+    }
+    
+    .feedback {
+      font-size: 0.99rem;
+
+    }
+    
+  }

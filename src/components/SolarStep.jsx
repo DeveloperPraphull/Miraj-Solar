@@ -18,7 +18,7 @@ const SolarSteps = () => {
       icon: proposalIcon,
       title: "Review Proposal & Confirm Order",
       description:
-        "Review your proposal and approve costing & design specification on Freyr Energy App",
+        "Review your proposal and approve costing & design specification on Miraj Solar  App",
       buttonText: "Download Now",
     },
     {
@@ -32,7 +32,7 @@ const SolarSteps = () => {
       icon: solarPoweredIcon,
       title: "Your Site is Solar Powered",
       description:
-        "We offer 24×7 service support and proactive maintenance to ensure that the system operates at peak efficiency with Freyr Energy App",
+        "We offer 24×7 service support and proactive maintenance to ensure that the system operates at peak efficiency with Miraj Solar  App",
       buttonText: "Download Now",
     },
   ];

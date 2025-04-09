@@ -38,7 +38,7 @@ export default function AboutPage() {
 
                 <div className="residencal-content">
                     <h2>
-                        AboutPage
+                        About Us
                     </h2>
                     <QuoteForm />
                 </div>
@@ -48,8 +48,8 @@ export default function AboutPage() {
                 <div className='about-compan-in'>
                     <h2>We Are India’s Leading Solar Energy Company</h2>
                     <p>
-                        Freyr Energy is one of the renowned rooftop solar companies across India. We install solar panels for houses and businesses. With over 8,500+ delighted
-                        clients across India, we have been offering world-class solar solutions to homes and businesses since 2014. We are affiliated with MNRE. Freyr Energy, our revolutionary consumer app, offers smooth solar adoption and 24/7 service support. With simple zero-interest EMI alternatives, we hope to make rooftop solar accessible to everyone.
+                        Miraj Solar  is one of the renowned rooftop solar companies across India. We install solar panels for houses and businesses. With over 1,500+ delighted
+                        clients across India, we have been offering world-class solar solutions to homes and businesses since 2020.. We are affiliated with MNRE. Miraj Solar , our revolutionary consumer app, offers smooth solar adoption and 24/7 service support. With simple zero-interest EMI alternatives, we hope to make rooftop solar accessible to everyone.
                     </p>
                     <h2>
                         Our Mission

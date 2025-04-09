@@ -5,13 +5,12 @@
     color: white;
     width: 98%;
     height: 35rem;
-    background-image: url(../../assets/images/banner-homes.jpg);
+    background-image: url(../../assets/images/Caresoul2.png);
     border-radius: 24px;
     overflow: hidden;
     background-repeat: no-repeat;
     object-fit: cover;
     background-size: cover; 
-    background-position: center;
     margin: auto;
     align-content: center;
     justify-items: center;
@@ -120,17 +119,6 @@
   
   
 
-  @media (max-width: 768px) {
-
-
-    
-      .About-content {
-        max-width: 100%;
-      }
-    
-    
-    
-  }
 
 
   
@@ -146,6 +134,13 @@
   }
   
   @media (max-width: 768px) {
+
+        
+    .About-content {
+      max-width: 100%;
+    }
+  
+    
     .team-members h2 {
       font-size: 1.5rem;
     }
@@ -163,6 +158,11 @@
       width: 100px;
       height: 100px;
     }
+
+    .feature-card p {
+      font-size: 21px;
+
+  }
   }
   
   @media (max-width: 480px) {

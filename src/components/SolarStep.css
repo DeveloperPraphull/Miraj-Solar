@@ -35,7 +35,7 @@
   }
   
   .step-card img {
-    width: 60px;
+    width: 30%;
     margin-bottom: 15px;
   }
   
@@ -66,3 +66,16 @@
     background: #333;
   }
   
+
+  @media (max-width: 768px) {
+
+
+    .step-card p {
+      font-size: 1.33rem;
+
+    }
+    
+
+  
+  
+}

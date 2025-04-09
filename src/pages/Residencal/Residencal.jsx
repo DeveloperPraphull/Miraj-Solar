@@ -68,7 +68,7 @@ function Residencal() {
         },
         {
             question: "How to get solar panels for home?",
-            answer: "Installing a solar panel system for home  is a straightforward process. Contact a reputable company like Freyr Energy. They will assist you at every installation step and procure the subsidy amount on your behalf.",
+            answer: "Installing a solar panel system for home  is a straightforward process. Contact a reputable company like Miraj Solar . They will assist you at every installation step and procure the subsidy amount on your behalf.",
         },
         {
             question: "How to install or setup solar panels at home in India?",
@@ -120,21 +120,21 @@ function Residencal() {
             name: "Ayaj Mohd. ",
             location: "Jabalpur, Madhya Pradesh",
             feedback:
-                "It’s been 1 year since Freyr Energy installed system on my home. We have not faced any issues and are very happy with their service. Highly recommend Freyr Energy.",
+                "It’s been 1 year since Miraj Solar  installed system on my home. We have not faced any issues and are very happy with their service. Highly recommend Miraj Solar .",
         },
         {
             img: profile2,
             name: "Sandeep Singh",
             location: "Indore, Madhya Pradesh",
             feedback:
-                "We have installed solar in 4 of our facilities with Freyr Energy and our energy costs have reduced substantially. Our consumers are already appreciating our efforts towards sustainability & net-zero.",
+                "We have installed solar in 4 of our facilities with Miraj Solar  and our energy costs have reduced substantially. Our consumers are already appreciating our efforts towards sustainability & net-zero.",
         },
         {
             img: profile3,
             name: "Vinay Vajpei",
             location: "Bhopal, Madhya Pradesh",
             feedback:
-                "Freyr Energy installed 3kW system on my house in Hyderabad. I used to pay ₹ 2,500-3,000 before solar, and last month I paid only ₹ 300! Their after-sales is also very quick & reliable.",
+                "Miraj Solar  installed 3kW system on my house in Hyderabad. I used to pay ₹ 2,500-3,000 before solar, and last month I paid only ₹ 300! Their after-sales is also very quick & reliable.",
         },
     ];
 
@@ -165,7 +165,7 @@ function Residencal() {
                 <div className='about-compan-in'>
                     <h2>We are India’s Top Solar Rooftop Company for Home</h2>
                     <p>
-                        Freyr Energy proudly stands as an approved solar energy provider by the Ministry of New and Renewable Energy, India. Our user-friendly app allows homeowners to effortlessly transition to solar power with home solar panel system. Plus, our hassle-free 0-cost EMI options ensure that solar panels for home cost remains both affordable and accessible to everyone.
+                        Miraj Solar  proudly stands as an approved solar energy provider by the Ministry of New and Renewable Energy, India. Our user-friendly app allows homeowners to effortlessly transition to solar power with home solar panel system. Plus, our hassle-free 0-cost EMI options ensure that solar panels for home cost remains both affordable and accessible to everyone.
                     </p>
 
                 </div>
