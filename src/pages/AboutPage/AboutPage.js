@@ -1,7 +1,7 @@
 import React from 'react'
 import '../AboutPage/AboutPage.css'
 import person from "../../assets/images/persons.png"
-import solarpanal from "../../assets/images/solar-panel.png";
+import solarpanal from "../../assets/images/co2-icon.png";
 import job from "../../assets/images/job.png"
 import womenicon from "../../assets/images/woman.png"
 import QuoteForm from '../../components/Button/Quote';
@@ -11,12 +11,12 @@ export default function AboutPage() {
     const features = [
         {
             icon: person,
-            heading: "20 Lakh",
+            heading: "5 Lakh",
             text: "Lives Impacted",
         },
         {
             icon: solarpanal,
-            heading: "82,500 Tons",
+            heading: "20,625  Tons",
             text: "C02 Emissions Reduced",
         },
         {
