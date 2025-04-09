@@ -1,96 +1,134 @@
-
+/* === Bottom-Right Side Tab Container === */
 .side-tab-container {
-    position: fixed;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition: all 0.3s ease-in-out;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 400px;
+  max-width: 100%;
+  height: 70vh; /* Visible panel height */
+  background-color: #ffffff;
+  box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.15);
+  transform: translateY(100%);
+  transition: transform 0.4s ease-in-out;
+  z-index: 9999;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  overflow-y: auto;
+}
+
+/* Show panel (slide up) */
+.side-tab-container.open {
+  transform: translateY(0);
+}
+
+/* === Toggle Button (Bottom-Right Trigger) === */
+.side-tab-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  z-index: 10000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.side-tab-toggle:hover {
+  background-color: #0056b3;
+}
+
+/* === Dropdown Form === */
+.dropdown-form {
+  padding: 24px;
+}
+
+.dropdown-form h2 {
+  margin-bottom: 16px;
+  font-size: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.form-group-tab {
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group-tab label {
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.form-group-tab input {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+/* === Messages === */
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.message {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: green;
+}
+
+/* === Submit Button === */
+.submit-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #28a745;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #218838;
+}
+
+/* === Mobile Responsive (Full Height & Width Bottom Tab) === */
+@media (max-width: 768px) {
+  .side-tab-container {
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 80vh;
+    border-radius: 12px 12px 0 0;
     z-index: 1;
-    font-family: fangsong;
   }
-  
-  .toggle-btn {
-    background: black;
-    padding: 8px 12px;
-    cursor: pointer;
-    border-radius: 0 5px 5px 0;
-  }
-  
-  .side-tab-content {
-    background: #008000;
-    color: white;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    padding: 12px;
-    border-radius: 0 5px 5px 0;
+
+  .side-tab-toggle {
+    bottom: 12px;
+    right: 12px;
+    padding: 10px 14px;
     font-size: 14px;
-    font-weight: bold;
-    writing-mode: vertical-rl;
-    text-orientation: mixed;
-    cursor: pointer;
+    z-index: 2;
   }
-  
-  /* Drop-down Form */
+
   .dropdown-form {
-    background: white;
-    padding: 12px;
-    position: absolute;
-    left: 100%;
-    top: 0;
-    width: 20rem;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    padding: 20px;
   }
-  
-  .dropdown-form h3 {
-    font-size: 16px;
-    margin: 0;
-    text-align: center;
-  }
-  
-  .dropdown-form input {
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    width: 95%;
-  }
-  
-  .dropdown-form button {
-    padding: 8px;
-    background: #008000;
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 4px;
-    margin-top: 1rem;
-  }
-  
-  /* Form Visibility */
-  .side-tab-container .dropdown-form {
-    opacity: 0;
-    transform: translateX(-10px);
-    transition: opacity 0.3s ease, transform 0.3s ease;
-  }
-  
-  .side-tab-container:hover .dropdown-form {
-    opacity: 1;
-    transform: translateX(0);
-  }
-  
-  @media (max-width: 768px) {
 
-
-    .dropdown-form {
-  
-      width: 16rem;
-  
-    }
-
+  .submit-button {
+    font-size: 15px;
   }
+}

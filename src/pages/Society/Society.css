@@ -5,7 +5,7 @@
     color: white;
     width: 98%;
     height: 35rem;
-    background-image: url(../../assets/images/banner-homes.jpg);
+    background-image: url(../../assets/images/Socitey_image.png);
     border-radius: 24px;
     overflow: hidden;
     background-repeat: no-repeat;
@@ -67,3 +67,11 @@
     color: #3f3d3d;
   }
 
+  
+  @media (max-width: 768px){
+
+    .society-content {
+
+      margin: 1%;
+  }
+  }

@@ -1,13 +1,15 @@
 import React, { useState } from "react";
 import "../Button/SideTab.css";
 import { FaEnvelope } from "react-icons/fa";
-import { IoIosArrowBack } from "react-icons/io";
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 const SideTab = () => {
-  const [isHovered, setIsHovered] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
   const [formData, setFormData] = useState({ name: "", phone: "", email: "" });
   const [errors, setErrors] = useState({});
   const [message, setMessage] = useState("");
+
+  const toggleTab = () => setIsOpen(!isOpen);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -24,8 +26,8 @@ const SideTab = () => {
 
   const onSubmit = async (event) => {
     event.preventDefault();
-    setMessage("your form submited"); // Clear previous messages
-    
+    setMessage("Your form is submitted"); // Temp message
+
     if (!validate()) return;
 
     try {
@@ -51,23 +53,17 @@ const SideTab = () => {
   };
 
   return (
-    <div
-      className="side-tab-container"
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
-    >
-      <div className="toggle-btn">
-        <IoIosArrowBack size={18} color="white" />
-      </div>
+    <>
+      {/* Toggle button */}
+      <button className="side-tab-toggle" onClick={toggleTab}>
+        {isOpen ? <IoIosArrowForward /> : <FaEnvelope />}
+        {isOpen ? " Close" : "Book Free Consultation"}
+      </button>
 
-      <div className="side-tab-content">
-        <FaEnvelope size={16} />
-        <span>Book Free Consultation</span>
-      </div>
-
-      {isHovered && (
+      {/* Side tab */}
+      <div className={`side-tab-container ${isOpen ? "open" : ""}`}>
         <div className="dropdown-form">
-          <h2>Contact Us</h2>
+          <h2>Book Free Consultation</h2>
           {message && <p className="message">{message}</p>}
           <form onSubmit={onSubmit}>
             <div className="form-group-tab">
@@ -75,24 +71,21 @@ const SideTab = () => {
               <input type="text" name="name" value={formData.name} onChange={handleChange} />
               {errors.name && <span className="error">{errors.name}</span>}
             </div>
-
             <div className="form-group-tab">
               <label>Phone No</label>
               <input type="tel" name="phone" value={formData.phone} onChange={handleChange} />
               {errors.phone && <span className="error">{errors.phone}</span>}
             </div>
-
             <div className="form-group-tab">
               <label>Email</label>
               <input type="email" name="email" value={formData.email} onChange={handleChange} />
               {errors.email && <span className="error">{errors.email}</span>}
             </div>
-
             <button className="submit-button" type="submit">Submit</button>
           </form>
         </div>
-      )}
-    </div>
+      </div>
+    </>
   );
 };
 

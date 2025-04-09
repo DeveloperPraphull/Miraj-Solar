@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import '../Header/Header.css'
 import { LuPhone } from "react-icons/lu";
 import { FaBars, FaTimes } from "react-icons/fa";
@@ -6,7 +6,7 @@ import QuoteForm from '../Button/Quote';
 
 export default function Header() {
 
-    const [menuOpen, setMenuOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
   return (
     <div className="navbar">
       {/* Logo Section */}
@@ -43,10 +43,13 @@ export default function Header() {
 
         {/* Contact & Quote Button */}
         <div className="contact">
-          <button className="phone">
-            <LuPhone /> 7999269074
-          </button>
-          <QuoteForm/>
+          <a href="tel:7999269074">
+            <button className="phone">
+              <LuPhone /> 7999269074
+            </button>
+          </a>
+
+          <QuoteForm />
         </div>
       </nav>
     </div>

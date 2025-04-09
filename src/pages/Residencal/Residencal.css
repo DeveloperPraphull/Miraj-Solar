@@ -112,3 +112,10 @@
   }
   
   
+  @media (max-width: 768px){
+
+    .residencal-content {
+
+      margin: 1%;
+  }
+  }
