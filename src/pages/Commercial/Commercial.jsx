@@ -10,7 +10,7 @@ import safetyIcon from "../../assets/images/best-badge.png";
 import supportIcon from "../../assets/images/best-badge.png"
 import project1 from "../../assets/images/2cdab8d7-8472-4a3b-9ade-e0d1491468e7.jpeg"
 import project2 from '../../assets/images/90aa40c9-9012-41e7-b2fd-c7d6e3923715.jpeg'
-import project3 from '../../assets/images/2cdab8d7-8472-4a3b-9ade-e0d1491468e7.jpeg'
+import project3 from '../../assets/images/b793f730-19ac-47e2-879c-f55d2b2c3dc0.jpeg'
 import QuoteForm from '../../components/Button/Quote'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus, faMinus } from "@fortawesome/free-solid-svg-icons";
@@ -77,7 +77,7 @@ function Commercial() {
 
     const projects = [
         { image: project1, title: "Regular Structure" },
-        { image: project1, title: "Advanced Structure" },
+        { image: project2, title: "Advanced Structure" },
         { image: project3, title: "Solar Rooftop" },
         { image: project1, title: "Commercial Solar" },
         { image: project2, title: "Industrial Solar" },

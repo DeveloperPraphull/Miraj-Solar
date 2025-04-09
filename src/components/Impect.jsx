@@ -1,7 +1,6 @@
 import React from "react";
 import "./Impect.css";
-import { FaCloud, FaSolarPanel, FaUsers, FaRupeeSign } from "react-icons/fa";
-import image11 from "../assets/images/co2-icon.png"
+  import image11 from "../assets/images/co2-icon.png"
 import solarhome from "../assets/images/solar-home.png"
 import person from "../assets/images/persons.png"
 import payback from "../assets/images/payback-icon.png"
