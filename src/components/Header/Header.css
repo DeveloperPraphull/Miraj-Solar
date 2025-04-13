@@ -1,219 +1,253 @@
-/* Navbar Container */
+:root {
+  --primary-green: #66cc33;
+  --hover-bg: #f0f0f0;
+  --font-color: #333;
+  --highlight-yellow: rgb(223, 206, 49);
+  --highlight-green: rgb(137, 224, 137);
+}
+
+/* Navbar Base */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 24px;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    position: relative;
-    z-index: 1000;
-    font-family: fangsong;
-  }
-  
-  /* Logo Section */
-  .logo {
-    display: flex;
-    align-items: center;
-    font-size: 20px;
-    font-weight: bold;
-  }
-  
-  .logo h2 {
-    color: rgb(223 206 49);
-  }
-  
-  .logo h2 span {
-    color: rgb(137, 224, 137);
-  }
-  
-  /* Menu Icon for Mobile */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 24px;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  font-family: 'Fangsong', serif;
+  position: relative;
+  z-index: 10;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.logo h2 {
+  color:#e9b14a;
+}
+
+.logo h2 span {
+  color: var(--highlight-green);
+}
+
+/* Menu Icon */
+.menu-icon {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+/* Navigation Menu */
+.nav-in {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  transition: all 0.3s ease;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--font-color);
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: var(--primary-green);
+}
+
+.nav-links li {
+  position: relative;
+}
+
+/* Dropdown */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  list-style: none;
+  padding: 10px 0;
+  border-radius: 5px;
+  min-width: 180px;
+  display: none;
+  z-index: 999;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li {
+  padding: 10px 15px;
+  transition: background 0.3s;
+}
+
+.dropdown-menu li:hover {
+  background: var(--hover-bg);
+}
+
+/* Contact Buttons */
+.contact {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Common Button Style */
+.phone,
+.quote {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  font-size: 14px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  z-index: 1;
+}
+
+/* Phone */
+.phone {
+  border: 1px solid var(--primary-green);
+  background: white;
+  color: var(--font-color);
+}
+
+.phone::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -100%;
+  width: 100%;
+  height: 100%;
+  background: var(--primary-green);
+  transition: bottom 0.3s ease;
+  z-index: -1;
+}
+
+.phone:hover::before {
+  bottom: 0;
+}
+
+.phone:hover {
+  color: white;
+}
+
+/* Quote */
+.quote {
+  border: 1px solid var(--primary-green);
+  background: var(--primary-green);
+  color: var(--font-color);
+}
+
+.quote::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -100%;
+  width: 100%;
+  height: 100%;
+  background: white;
+  transition: top 0.3s ease;
+  z-index: -1;
+}
+
+.quote:hover::before {
+  top: 0;
+}
+
+.quote:hover {
+  color: #7e7b7b;
+}
+
+/* ------------ Responsive Media Queries ------------ */
+
+/* Mobile Devices (≤768px) */
+@media (max-width: 768px) {
   .menu-icon {
-    display: none;
-    font-size: 24px;
-    cursor: pointer;
+    display: block;
   }
-  
-  /* Navigation Menu */
+
   .nav-in {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-    transition: max-height 0.5s ease-in-out;
-  }
-  
-  .nav-links {
-    display: flex;
-    gap: 20px;
-    list-style: none;
-    font-size: 16px;
-    font-weight: 500;
-  }
-  
-  .nav-links a {
-    text-decoration: none;
-    color: #333;
-    transition: color 0.3s;
-  }
-  
-  .nav-links li {
-    position: relative;
-  }
-  
-  /* Dropdown Menu */
-  .dropdown-menu {
     position: absolute;
     top: 100%;
     left: 0;
-    background: #fff;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    list-style: none;
-    padding: 10px 0;
-    border-radius: 5px;
-    min-width: 180px;
-    z-index: 1000;
-    display: none;
-  }
-  
-  .dropdown:hover .dropdown-menu {
-    display: block;
-  }
-  
-  /* Dropdown Items */
-  .dropdown-menu li {
-    padding: 10px 15px;
-    transition: background 0.3s;
-  }
-  
-  .dropdown-menu li:hover {
-    background: #f0f0f0;
-  }
-  
-  /* Contact & Buttons */
-  .contact {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin: 1rem;
-  }
-  
-  
-  
-  
-  
-  /* Common Button Styling */
-  .phone {
-    position: relative;
-    overflow: hidden;
-    border-radius: 20px;
-    font-size: 14px;
-    padding: 8px 14px;
-    cursor: pointer;
-    transition: color 0.3s ease-in-out;
-    border: 1px solid #66cc33;
-    background: white;
-    color: #333;
-    z-index: 1;
-  }
-  
-  /* Background Effect for Phone Button (Bottom to Top) */
-  .phone::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -100%;
-    /* Initially hidden */
-    width: 100%;
-    height: 100%;
-    background: #66cc33;
-    transition: bottom 0.3s ease-in-out;
-    z-index: -1;
-  }
-  
-  .phone:hover::before {
-    bottom: 0;
-    /* Moves background from bottom to top */
-  }
-  
-  
-  .quote {
-    position: relative;
-    overflow: hidden;
-    border-radius: 20px;
-    font-size: 14px;
-    padding: 8px 14px;
-    cursor: pointer;
-    transition: color 0.3s ease-in-out;
-    border: 1px solid #66cc33;
-    background: #66cc33;
-    color: #333;
-    z-index: 1;
-  }
-  
-  /* Background Effect for Quote Button (Top to Bottom) */
-  .quote::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: -100%;
-    /* Initially hidden */
-    width: 100%;
-    height: 100%;
-    color: #c5c1c1;
-    background: #ffffff;
-    transition: top 0.3s ease-in-out;
-    z-index: -1;
-  }
-  
-  .quote:hover::before {
-    top: 0;
-    /* Moves background from top to bottom */
-  }
-  
-  /* Text color change on hover */
-  .phone:hover {
-    color: white;
-  }
-  
-  .quote:hover {
-    color: #7e7b7b;
-  }
-  
-  
-  @media (max-width:768px ) {
-
-
-  .menu-icon {
-    display: block;
-  }
-
-  .nav-in {
-    position: absolute;
-    top: 99%;
-    left: 0;
-    width: 100%;
-    background: white;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    background: #fff;
     max-height: 0;
     overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   }
 
   .nav-in.show {
-    max-height: 500px;
+    max-height: 600px;
   }
 
   .nav-links {
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
   }
 
   .dropdown-menu {
     position: relative;
     top: 0;
     left: 0;
+    box-shadow: none;
     width: 100%;
+    background: #f9f9f9;
+    border-radius: 0;
   }
 
+  .contact {
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px 0;
   }
+}
+
+/* Tablets (769px to 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .navbar {
+    padding: 10px 16px;
+  }
+
+  .nav-links {
+    gap: 16px;
+  }
+
+  .contact {
+    gap: 8px;
+  }
+
+  .phone,
+  .quote {
+    padding: 6px 14px;
+    font-size: 13px;
+  }
+}
+
+/* Desktops (above 1024px) */
+@media (min-width: 1025px) {
+  .nav-in {
+    flex-direction: row;
+  }
+}

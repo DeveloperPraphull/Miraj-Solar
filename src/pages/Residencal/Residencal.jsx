@@ -162,7 +162,7 @@ function Residencal() {
             </div>
 
             <div className='about-compan'>
-                <div className='about-compan-in'>
+                <div className='panel-advo'>
                     <h2>We are India’s Top Solar Rooftop Company for Home</h2>
                     <p>
                         Miraj Solar  proudly stands as an approved solar energy provider by the Ministry of New and Renewable Energy, India. Our user-friendly app allows homeowners to effortlessly transition to solar power with home solar panel system. Plus, our hassle-free 0-cost EMI options ensure that solar panels for home cost remains both affordable and accessible to everyone.

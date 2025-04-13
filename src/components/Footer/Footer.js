@@ -10,17 +10,20 @@ import QuoteForm from "../Button/Quote";
 const Footer = () => {
   return (
     <footer className="footer">
+      
       {/* Top Section */}
       <div className="footer-top">
+        
+        {/* Company Logo & Tagline */}
         <div className="footer-logo">
-          <h2>Miraj<span>$olar.com</span></h2>
-          <p>Making solar <span className="green">Easy</span> </p>
+          <h2>Miraj$olar<span>.com</span></h2>
+          <p>Making solar Easy</p>
         </div>
 
+        {/* Quick Links */}
         <div className="footer-links">
           <ul>
             {[
-
               { name: "ABOUT US", link: "/AboutPage" },
               { name: "CONTACT US", link: "/contactus" },
               { name: "SOLAR CALCULATOR", link: "/solar-calculator" },
@@ -35,12 +38,24 @@ const Footer = () => {
           </ul>
         </div>
 
-
+        {/* Contact & Socials */}
         <div className="footer-contact">
-          <QuoteForm/>
-          <p><FaPhone /> <Link to="tel:8989909074">8989909074</Link></p>
-          <p><FaEnvelope /> <Link to="mailto:sales@mirajsolar.com">sales@mirajsolar.com</Link></p>
-          <p><FaMapMarkerAlt /> <Link to="https://g.co/kgs/DQSCyQC"> 300A, Ground Floor, Anoop Nagar Near Shaikh Super Store , Indore, India - 452018 </Link> </p>
+          <QuoteForm />
+          
+          <p>
+            <FaPhone />
+            <Link to="tel:8989808097">8989808097</Link>
+          </p>
+          <p>
+            <FaEnvelope />
+            <Link to="mailto:sales@mirajsolar.com">sales@mirajsolar.com</Link>
+          </p>
+          <p>
+            <FaMapMarkerAlt />
+            <Link to="https://g.co/kgs/DQSCyQC" target="_blank" rel="noopener noreferrer">
+              300A, Ground Floor, Anoop Nagar Near Shaikh Super Store, Indore, India - 452018
+            </Link>
+          </p>
 
           <div className="social-icons">
             <Link to="https://www.facebook.com/share/14E8iV3Cw2h/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer"><FaFacebook /></Link>
@@ -58,9 +73,9 @@ const Footer = () => {
       <div className="footer-bottom">
         <h3>Our Locations</h3>
         <div className="locations">
-          <p><strong>MADHYA PRADESH</strong> • Solar in Indore • Solar in Dewas • Solar in Ujjain • Solar in Bhopal • Solar in Sehore • Solar in Jabalpur • Solar in Katni • Solar in Satna • Solar in Rewa • Solar in Mandla • Solar in Seoni • Solar in Narsinghpur • Solar in Damoh  • Solar in Gwalior </p>
-          <p><strong>MAHARASHTRA</strong> • Solar in Pune • Solar in Nagpur</p>
-          <p><strong>UTTAR PRADESH</strong> • Solar in Lucknow • Solar in Kanpur</p>
+          <p><strong>MADHYA PRADESH</strong> • Solar in Indore • Solar in Dewas • Solar in Ujjain • Solar in Bhopal • Solar in Sehore • Solar in Jabalpur • Solar in Katni • Solar in Satna • Solar in Rewa • Solar in Mandla • Solar in Seoni • Solar in Narsinghpur • Solar in Damoh • Solar in Gwalior</p>
+          <p><strong>MAHARASHTRA</strong> • Solar in  Pune • Solar in  Nagpur</p>
+          <p><strong>UTTAR PRADESH</strong> • Solar in  Lucknow • Solar in Kanpur</p>
         </div>
 
         <div className="footer-policy">

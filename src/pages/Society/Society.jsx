@@ -155,7 +155,7 @@ function Society() {
             </div>
 
             {/* Company Details */}
-            <div className='about-compan'>
+            <div className='Socity-compan'>
                 <div className='panel-advo'>
                     <h1>We are India’s Top Solar Rooftop Company for Housing Societies </h1>
                     <p>

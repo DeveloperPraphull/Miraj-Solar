@@ -36,7 +36,7 @@ export default function AboutPage() {
         <section>
             <div className="about-overlay">
 
-                <div className="residencal-content">
+                <div className="about-content">
                     <h2>
                         About Us
                     </h2>
@@ -45,7 +45,7 @@ export default function AboutPage() {
             </div>
 
             <div className='about-compan'>
-                <div className='about-compan-in'>
+                <div className='panel-advo'>
                     <h2>We Are India’s Leading Solar Energy Company</h2>
                     <p>
                         Miraj Solar  is one of the renowned rooftop solar companies across India. We install solar panels for houses and businesses. With over 1,500+ delighted
