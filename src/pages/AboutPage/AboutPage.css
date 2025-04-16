@@ -79,7 +79,6 @@
 .social-impect {
   padding: clamp(30px, 5vw, 60px) 20px;
   background-color: #fff;
-  background-image: url(../../assets/images/infinity-logo.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;

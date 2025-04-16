@@ -12,11 +12,11 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 24px;
-  background-color: #fff;
+  background-color: #0f172a;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  font-family: 'Fangsong', serif;
   position: relative;
   z-index: 10;
+  height: 3rem;
 }
 
 /* Logo */
@@ -54,14 +54,15 @@
   display: flex;
   gap: 20px;
   list-style: none;
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 800;
 }
 
 .nav-links a {
   text-decoration: none;
-  color: var(--font-color);
+  color: white;
   transition: color 0.3s ease;
+  font-weight: 800;
 }
 
 .nav-links a:hover {
@@ -77,7 +78,7 @@
   position: absolute;
   top: 100%;
   left: 0;
-  background: #fff;
+  background: #f71b58;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
   list-style: none;
   padding: 10px 0;
@@ -180,7 +181,8 @@
 @media (max-width: 768px) {
   .menu-icon {
     display: block;
-  }
+    color: #30e3a1;
+  } 
 
   .nav-in {
     position: absolute;
@@ -197,6 +199,7 @@
 
   .nav-in.show {
     max-height: 600px;
+    background-color: #f71b58;
   }
 
   .nav-links {

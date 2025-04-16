@@ -85,10 +85,10 @@ const testimonials = [
     },
     {
         img: profile3,
-        name: "Vinay Vajpei",
+        name: "Vinay Vajpayi",
         location: "Bhopal, Madhya Pradesh",
         feedback:
-            "Freyr Energy installed 3kW system on my house in Hyderabad. I used to pay ₹ 2,500-3,000 before solar, and last month I paid only ₹ 300! Their after-sales is also very quick & reliable.",
+            "Freyr Energy installed 3kW system on my house in Bhopal. I used to pay ₹ 2,500-3,000 before solar, and last month I paid only ₹ 300! Their after-sales is also very quick & reliable.",
     },
 ];
 
